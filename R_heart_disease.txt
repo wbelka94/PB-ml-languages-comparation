@@ -1,0 +1,530 @@
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.47 sec elapsed"
+
+[[2]]
+[1] "cart: 0.58 sec elapsed"
+
+[[3]]
+[1] "knn: 0.42 sec elapsed"
+
+[[4]]
+[1] "svm: 1.55 sec elapsed"
+
+[[5]]
+[1] "rf: 0.86 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0.01 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.42 sec elapsed"
+
+[[2]]
+[1] "cart: 0.48 sec elapsed"
+
+[[3]]
+[1] "knn: 0.46 sec elapsed"
+
+[[4]]
+[1] "svm: 0.51 sec elapsed"
+
+[[5]]
+[1] "rf: 0.86 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0.02 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.43 sec elapsed"
+
+[[2]]
+[1] "cart: 0.48 sec elapsed"
+
+[[3]]
+[1] "knn: 0.45 sec elapsed"
+
+[[4]]
+[1] "svm: 0.49 sec elapsed"
+
+[[5]]
+[1] "rf: 0.87 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0.02 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.44 sec elapsed"
+
+[[2]]
+[1] "cart: 0.48 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.5 sec elapsed"
+
+[[5]]
+[1] "rf: 0.84 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0.02 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.42 sec elapsed"
+
+[[2]]
+[1] "cart: 0.49 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.5 sec elapsed"
+
+[[5]]
+[1] "rf: 0.86 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0.01 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.44 sec elapsed"
+
+[[2]]
+[1] "cart: 0.48 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.48 sec elapsed"
+
+[[5]]
+[1] "rf: 0.86 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0.02 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.44 sec elapsed"
+
+[[2]]
+[1] "cart: 0.48 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.48 sec elapsed"
+
+[[5]]
+[1] "rf: 0.86 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0.02 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.43 sec elapsed"
+
+[[2]]
+[1] "cart: 0.48 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.5 sec elapsed"
+
+[[5]]
+[1] "rf: 0.84 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0.02 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.42 sec elapsed"
+
+[[2]]
+[1] "cart: 0.49 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.48 sec elapsed"
+
+[[5]]
+[1] "rf: 0.86 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0.02 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+
+
+Call:
+summary.resamples(object = results)
+
+Models: lda, cart, knn, svm, rf 
+Number of resamples: 2 
+
+Accuracy 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.8181818 0.8226528 0.8271237 0.8271237 0.8315946 0.8360656    0
+cart 0.6611570 0.6884907 0.7158244 0.7158244 0.7431581 0.7704918    0
+knn  0.6229508 0.6242379 0.6255250 0.6255250 0.6268121 0.6280992    0
+svm  0.8429752 0.8473953 0.8518155 0.8518155 0.8562356 0.8606557    0
+rf   0.8016529 0.8102561 0.8188592 0.8188592 0.8274624 0.8360656    0
+
+Kappa 
+          Min.   1st Qu.    Median      Mean   3rd Qu.      Max. NA's
+lda  0.6325235 0.6416471 0.6507707 0.6507707 0.6598943 0.6690179    0
+cart 0.3210620 0.3752662 0.4294704 0.4294704 0.4836746 0.5378788    0
+knn  0.2303895 0.2351111 0.2398328 0.2398328 0.2445545 0.2492762    0
+svm  0.6814466 0.6904639 0.6994811 0.6994811 0.7084984 0.7175157    0
+rf   0.5981179 0.6156178 0.6331177 0.6331177 0.6506176 0.6681175    0
+
+[[1]]
+[1] "lda: 0.42 sec elapsed"
+
+[[2]]
+[1] "cart: 0.49 sec elapsed"
+
+[[3]]
+[1] "knn: 0.44 sec elapsed"
+
+[[4]]
+[1] "svm: 0.5 sec elapsed"
+
+[[5]]
+[1] "rf: 0.84 sec elapsed"
+
+[[6]]
+[1] "lda-predict: 0.01 sec elapsed"
+
+[[7]]
+[1] "cart-predict: 0 sec elapsed"
+
+[[8]]
+[1] "knn-predict: 0 sec elapsed"
+
+[[9]]
+[1] "svm-predict: 0 sec elapsed"
+
+[[10]]
+[1] "rf-predict: 0 sec elapsed"
+

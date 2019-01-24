@@ -53,9 +53,6 @@ for (i in 1:10){
   tic("rf")
   fit.rf <- train(X14~., data=dataset, method="rf", metric=metric, trControl=control)
   toc(log = TRUE, quiet = TRUE)
-  # summarize accuracy of models
-  results <- resamples(list(lda=fit.lda, cart=fit.cart, knn=fit.knn, svm=fit.svm, rf=fit.rf))
-  summary(results)
   
   tic("lda-predict")
   x = predict(fit.lda, validation)
@@ -72,11 +69,11 @@ for (i in 1:10){
   tic("rf-predict")
   x = predict(fit.rf, validation)
   toc(log = TRUE, quiet = TRUE)
-
   
-  # estimate skill of LDA on the validation dataset
-  # predictions <- predict(fit.lda, validation)
-  # confusionMatrix(predictions, validation$X14)
+  # summarize accuracy of models
+  results <- resamples(list(lda=fit.lda, cart=fit.cart, knn=fit.knn, svm=fit.svm, rf=fit.rf))
+  print(summary(results))
+
   timings <- tic.log()
   print(timings)
 }

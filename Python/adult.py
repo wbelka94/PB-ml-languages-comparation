@@ -7,22 +7,20 @@ from sklearn import tree
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
-import psutil
-import os
 from timeit import default_timer as timer
 
 from convertFeaturesToFloat import DatasetConverter
 
-train = pd.read_csv('../datasets/adult_train.csv')
+train = pd.read_csv('C:/Users/Administrator/Desktop/PB/datasets/adult_train.csv')
 train = train.drop(train.columns[0], axis=1)
-test = pd.read_csv('../datasets/adult_test.csv')
+test = pd.read_csv('C:/Users/Administrator/Desktop/PB/datasets/adult_test.csv')
 test = test.drop(test.columns[0], axis=1)
 dc = DatasetConverter()
-dc.convertAndSave(train, test, 'adult', '../datasets/')
+dc.convertAndSave(train, test, 'adult', 'C:/Users/Administrator/Desktop/PB/datasets/')
 
-train = pd.read_csv('../datasets/adult_train[float].csv')
+train = pd.read_csv('C:/Users/Administrator/Desktop/PB/datasets/adult_train[float].csv')
 train = train.drop(train.columns[0], axis=1)
-test = pd.read_csv('../datasets/adult_test[float].csv')
+test = pd.read_csv('C:/Users/Administrator/Desktop/PB/datasets/adult_test[float].csv')
 test = test.drop(test.columns[0], axis=1)
 
 print(test)
@@ -37,59 +35,47 @@ for i in range(10):
     start = timer()
     clf.fit(train_X, train_Y)
     end = timer()
-    print("Fit time")
-    print(end - start)
+    print("knn-fit: ", end - start)
     #
     start = timer()
     predicted_y = clf.predict(test_X)
     end = timer()
-    print("Pred time")
-    print(end - start)
-
-    print(accuracy_score(test_Y, predicted_y))
+    print("knn-predict: ", end - start)
+    print("knn-accuracy: ", accuracy_score(test_Y, predicted_y))
 
     clf = tree.DecisionTreeClassifier()
     start = timer()
     clf.fit(train_X, train_Y)
     end = timer()
-    print("Fit time")
-    print(end - start)
+    print("tree-fit: ", end - start)
     #
     start = timer()
     predicted_y = clf.predict(test_X)
     end = timer()
-    print("Pred time")
-    print(end - start)
-
-    print(accuracy_score(test_Y, predicted_y))
+    print("tree-predict: ", end - start)
+    print("tree-accuracy: ", accuracy_score(test_Y, predicted_y))
 
     clf = RandomForestClassifier()
     start = timer()
     clf.fit(train_X, train_Y)
     end = timer()
-    print("Fit time")
-    print(end - start)
+    print("RandomForest-fit: ", end - start)
     #
     start = timer()
     predicted_y = clf.predict(test_X)
     end = timer()
-    print("Pred time")
-    print(end - start)
-
-    print(accuracy_score(test_Y, predicted_y))
+    print("RandomForest-predict: ", end - start)
+    print("RandomForest-accuracy: ", accuracy_score(test_Y, predicted_y))
 
     clf = svm.SVC(gamma='scale')
     # #
     start = timer()
     clf.fit(train_X, train_Y)
     end = timer()
-    print("Fit time")
-    print(end - start)
+    print("svc-fit: ", end - start)
     #
     start = timer()
     predicted_y = clf.predict(test_X)
     end = timer()
-    print("Pred time")
-    print(end - start)
-
-    print(accuracy_score(test_Y, predicted_y))
+    print("svc-predict: ", end - start)
+    print("svc-accuracy: ", accuracy_score(test_Y, predicted_y))

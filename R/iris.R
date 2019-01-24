@@ -14,41 +14,37 @@ validation <- read.table("C:/Users/Administrator/Desktop/PB/datasets/iris_test.c
 dataset <- read.table("C:/Users/Administrator/Desktop/PB/datasets/iris_train.csv", sep=",", header=T, fill=FALSE, strip.white=T)
 
 # Run algorithms using 10-fold cross validation
-control <- trainControl(method="cv", number=2)
 metric <- "Accuracy"
 for (i in 1:10){
   # a) linear algorithms
   tic.clearlog()
   set.seed(7)
   tic("lda-fit")
-  fit.lda <- train(Species~., data=dataset, method="lda", metric=metric, trControl=control)
+  fit.lda <- train(Species~., data=dataset, method="lda", metric=metric)
   toc(log = TRUE, quiet = TRUE)
   
   # b) nonlinear algorithms
   # CART
   set.seed(7)
   tic("cart-fit")
-  fit.cart <- train(Species~., data=dataset, method="rpart", metric=metric, trControl=control)
+  fit.cart <- train(Species~., data=dataset, method="rpart", metric=metric)
   toc(log = TRUE, quiet = TRUE)
   # kNN
   set.seed(7)
   tic("knn-fit")
-  fit.knn <- train(Species~., data=dataset, method="knn", metric=metric, trControl=control)
+  fit.knn <- train(Species~., data=dataset, method="knn", metric=metric)
   toc(log = TRUE, quiet = TRUE)
   # c) advanced algorithms
   # SVM
   set.seed(7)
   tic("svm-fit")
-  fit.svm <- train(Species~., data=dataset, method="svmRadial", metric=metric, trControl=control)
+  fit.svm <- train(Species~., data=dataset, method="svmRadial", metric=metric)
   toc(log = TRUE, quiet = TRUE)
   # Random Forest
   set.seed(7)
   tic("rf-fit")
-  fit.rf <- train(Species~., data=dataset, method="rf", metric=metric, trControl=control)
+  fit.rf <- train(Species~., data=dataset, method="rf", metric=metric)
   toc(log = TRUE, quiet = TRUE)
-  # summarize accuracy of models
-  results <- resamples(list(lda=fit.lda, cart=fit.cart, knn=fit.knn, svm=fit.svm, rf=fit.rf))
-  summary(results)
   
   tic("lda-predict")
   x = predict(fit.lda, validation)
@@ -66,9 +62,10 @@ for (i in 1:10){
   x = predict(fit.rf, validation)
   toc(log = TRUE, quiet = TRUE)
   
-  # estimate skill of LDA on the validation dataset
-  # predictions <- predict(fit.svm, validation)
-  # confusionMatrix(predictions, validation$Species)
+  # summarize accuracy of models
+  results <- resamples(list(lda=fit.lda, cart=fit.cart, knn=fit.knn, svm=fit.svm, rf=fit.rf))
+  print(summary(results))
+  
   timings <- tic.log()
   print(timings)
 }
